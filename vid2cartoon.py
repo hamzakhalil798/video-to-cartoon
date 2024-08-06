@@ -60,8 +60,8 @@ def main(source_video, style, output_video_name="test.mp4", video_length=None):
     st = StylePropagator(video_path, keyframes, frames, propagated_frames)
     local_ebsynth_path = "bin"
     video_root_folder = current_path + "/tmp"  # temporal directory for intermediate files
-    st.advanced_propagation(local_ebsynth_path, output_video_name, video_root_folder, end=processable_length,
-                            interval=interval)
+    # st.advanced_propagation(local_ebsynth_path, output_video_name, video_root_folder, end=processable_length,
+    #                         interval=interval)
 
 
 if __name__ == '__main__':
